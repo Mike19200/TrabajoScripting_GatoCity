@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class CentroDeEntretenimiento : Habitacion
-{
+{ 
     public static int Precio = 1000;
     public static int BonusFelicidad = 20;
 
