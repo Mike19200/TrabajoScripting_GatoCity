@@ -148,7 +148,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82100213}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.86, y: -2.9, z: -0.02806031}
+  m_LocalPosition: {x: 0.08, y: 0.63, z: -0.02806031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -217,7 +217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 110058489}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: GatoNegro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629053901}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.83, y: -2.7505274, z: -0.02806031}
+  m_LocalPosition: {x: 1.11, y: 0.87, z: -0.02806031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -468,7 +468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 733100761}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GatoNaranja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -515,7 +515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 749758754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9444354, y: -2.7505274, z: -0.02806031}
+  m_LocalPosition: {x: 1.15, y: -2.2, z: -0.02806031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -685,7 +685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1006818031}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: OtroGato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -854,7 +854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1466829333}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.9, y: -2.7505274, z: -0.02806031}
+  m_LocalPosition: {x: -7.86, y: -2.11, z: -0.02806031}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1007,7 +1007,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1995528747}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: GatoPersa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

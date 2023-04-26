@@ -19,4 +19,24 @@ public class SceneManager : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
     }
+
+    public void Habitacion1()
+    {
+        SceneManager.LoadScene("1");
+    }
+
+    public void Habitacion2()
+    {
+        SceneManager.LoadScene("2");
+    }
+    
+    public void Habitacion3()
+    {
+        SceneManager.LoadScene("3");
+    }
+
+    public void Habitacion4()
+    {
+        SceneManager.LoadScene("4");
+    }
 }
