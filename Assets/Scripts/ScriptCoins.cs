@@ -51,5 +51,6 @@ public class ScriptCoins : MonoBehaviour
     {
         // Asegurarse de que el objeto no se destruya al cambiar de escena
         DontDestroyOnLoad(gameObject);
+        
     }
 }
