@@ -20,6 +20,11 @@ public class ManejoDeEscenas : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
+    public void Hotel()
+    {
+        SceneManager.LoadScene("Hotel");
+    }
+
     public void Habitacion1()
     {
         SceneManager.LoadScene("1");

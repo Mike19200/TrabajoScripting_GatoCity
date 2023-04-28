@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AgregarGatos : MonoBehaviour
 {
     public int gatosEnHabitacion = 0; 
+    public int felicidadGatos = 0;
     public Text textoGatosEnHabitacion; 
     public GameObject[] objetosGatos; 
     public Camera camara;
@@ -33,6 +34,7 @@ public class AgregarGatos : MonoBehaviour
         if(gatosEnHabitacion < 4)
         {
            gatosEnHabitacion++; 
+           felicidadGatos++;
            textoGatosEnHabitacion.text = "Gatos en la habitacion: " + gatosEnHabitacion.ToString();  
         }
     }

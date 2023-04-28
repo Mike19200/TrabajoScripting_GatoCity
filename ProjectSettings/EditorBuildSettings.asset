@@ -8,4 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Inicio.unity
+    guid: edc295e7876cc4e47ae2ad250fb1f7a6
+  - enabled: 1
+    path: Assets/Scenes/Hotel.unity
+    guid: c6690e4f22b38d341944cb68682e7d0e
+  - enabled: 1
+    path: Assets/Scenes/Habitaciones/1.unity
+    guid: 84f7eac478a8b447ab38efa5cdc1a516
+  - enabled: 1
+    path: Assets/Scenes/Cats.unity
+    guid: 06cf7b048351bf24180af901f59e2a47
+  - enabled: 1
+    path: Assets/Scenes/Tienda.unity
+    guid: 090fccbeab4c744ac932694df88ff64d
   m_configObjects: {}
