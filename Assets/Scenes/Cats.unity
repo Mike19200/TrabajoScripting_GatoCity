@@ -620,6 +620,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 579652443156686568, guid: 8757374f4209a4e21ac56f2bb0faaa68, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 63208e6faf12aa0409b0b22ed505a44e, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8757374f4209a4e21ac56f2bb0faaa68, type: 3}
 --- !u!1001 &878109537053739703
@@ -677,6 +681,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: GatoNegro
       objectReference: {fileID: 0}
+    - target: {fileID: 878109537802289312, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c6c5b1a43cfd62e4486c8cfd691f8c00, type: 3}
+    - target: {fileID: 878109537802289312, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
+      propertyPath: m_Color.b
+      value: 0.46502313
+      objectReference: {fileID: 0}
+    - target: {fileID: 878109537802289312, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
+      propertyPath: m_Color.g
+      value: 0.46836063
+      objectReference: {fileID: 0}
+    - target: {fileID: 878109537802289312, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4716981
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
 --- !u!1001 &1982464351629945862
@@ -686,6 +706,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1982464351686333425, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4bf30a0e508a8c14eadfb320f8a699b2, type: 3}
+    - target: {fileID: 1982464351686333425, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.4273318
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982464351686333425, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.72883874
+      objectReference: {fileID: 0}
+    - target: {fileID: 1982464351686333425, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
     - target: {fileID: 1982464352278877918, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
       propertyPath: m_Name
       value: GatoNaranja
@@ -790,6 +826,22 @@ PrefabInstance:
     - target: {fileID: 7002141093619316629, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002141093766921397, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ed2046dd9a817db4c9778d84b5e38d21, type: 3}
+    - target: {fileID: 7002141093766921397, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002141093766921397, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8962264
+      objectReference: {fileID: 0}
+    - target: {fileID: 7002141093766921397, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8962264
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
