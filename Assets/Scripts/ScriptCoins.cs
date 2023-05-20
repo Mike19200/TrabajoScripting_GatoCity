@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class ScriptCoins : MonoBehaviour
 {
-   // Declaración de variables
+    public static ScriptCoins Instance { get; private set; }
 
-    public Text textoProduccionMonedasHabitacion; // Variable para el objeto de texto
+    public Text textoProduccionMonedasHabitacion;
     public float tiempoAumento = 5f;
     public float tiempoDisminucion = 1f;
     public float aumentoPorCiclo = 1f;
@@ -18,39 +18,38 @@ public class ScriptCoins : MonoBehaviour
     private float tiempoRestante = 0f;
     private float felicidadGatos = 0f;
 
-    void Update()
+    private void Awake()
     {
-        // Actualizar el tiempo pasado
-        tiempoPasado += Time.deltaTime;
-
-        // Si ha pasado el tiempo de aumento de producción
-        if (tiempoPasado >= tiempoRestante)
+        if (Instance == null)
         {
-            tiempoPasado = 0f;
-
-            // Aumentar la producción
-            produccionMonedasHabitacion += aumentoPorCiclo;
-
-            // Disminuir el tiempo para el próximo aumento de producción
-            tiempoRestante = tiempoAumento - felicidadGatos * tiempoDisminucion;
-
-          if (textoProduccionMonedasHabitacion != null)
-          {
-            textoProduccionMonedasHabitacion.text = "GatoCoins: " + produccionMonedasHabitacion.ToString();
-          }
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 
-    // Método para actualizar la felicidad de los gatos
+    private void Update()
+    {
+        tiempoPasado += Time.deltaTime;
+
+        if (tiempoPasado >= tiempoRestante)
+        {
+            tiempoPasado = 0f;
+            produccionMonedasHabitacion += aumentoPorCiclo;
+            tiempoRestante = tiempoAumento - felicidadGatos * tiempoDisminucion;
+
+            if (textoProduccionMonedasHabitacion != null)
+            {
+                textoProduccionMonedasHabitacion.text = "GatoCoins: " + produccionMonedasHabitacion.ToString();
+            }
+        }
+    }
+
     public void ActualizarFelicidadGatos(float felicidad)
     {
         felicidadGatos = felicidad;
-    }
-    
-    void Awake()
-    {
-        // Asegurarse de que el objeto no se destruya al cambiar de escena
-        DontDestroyOnLoad(gameObject);
-        
     }
 }
