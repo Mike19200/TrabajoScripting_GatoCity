@@ -33,7 +33,7 @@ public class Cat : MonoBehaviour
 
 public class WhiteCat : Cat
 {
-    public void UseSpecialAbility(Player player)
+    public void UseSpecialAbility()
     {
         if (HasSpecialAbility)
         {
