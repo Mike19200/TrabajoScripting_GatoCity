@@ -1450,7 +1450,7 @@ MonoBehaviour:
   tiempoAumento: 1
   tiempoDisminucion: 1
   aumentoPorCiclo: 1
-  disminucionPorGato: 0.5
+  disminucionPorGato: 100
 --- !u!4 &1529585864
 Transform:
   m_ObjectHideFlags: 0
