@@ -378,7 +378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &325278615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -825,15 +825,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca3b0a9020f804ea4832afa73caf0a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gatosEnHabitacion: 0
   felicidadGatos: 0
   textoGatosEnHabitacion: {fileID: 1899549201}
   felicidadGatosTexto: {fileID: 325278616}
-  objetosGatos:
-  - {fileID: 1982464352278877918, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
-  - {fileID: 878109537011749199, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
-  - {fileID: 579652442187863526, guid: 8757374f4209a4e21ac56f2bb0faaa68, type: 3}
-  - {fileID: 7002141093619316628, guid: 43ba3e26045d64b68842e2f839424728, type: 3}
+  objetoGatoNaranja: {fileID: 1982464352278877918, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
+  objetoGatoNegro: {fileID: 878109537011749199, guid: b2583551afefd4b24b1617ac3fbf2086, type: 3}
+  objetoGatoPersa: {fileID: 579652442187863526, guid: 8757374f4209a4e21ac56f2bb0faaa68, type: 3}
   camara: {fileID: 1358357211}
   rango: 1
   velocidadAumentoFelicidad: 0.1
@@ -983,7 +980,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1870732713
 RectTransform:
   m_ObjectHideFlags: 0
