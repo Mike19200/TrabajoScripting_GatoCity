@@ -8,7 +8,7 @@ public class AgregarGatos : MonoBehaviour
     public int gatosEnHabitacion = 0; 
     public float felicidadGatos = 0;
 
-    public int nivelHabitacion = 1;
+    public static int nivelHabitacion = 1;
     public Text textoGatosEnHabitacion; 
     public Text felicidadGatosTexto; 
     public GameObject[] objetosGatos; 
@@ -17,15 +17,16 @@ public class AgregarGatos : MonoBehaviour
     public float rango = 1f; 
     public float velocidadAumentoFelicidad = 0.0000005f;
 
-    private void Start() 
+    public void Start() 
     {
-        nivelHabitacion=1;
+        nivelHabitacion = TiendaScript.nivelHabitacionn;
     }
-    private void Update() 
+    public void Update() 
     {
         felicidadGatosTexto.text = "Felicidad: " + $"{felicidadGatos}";
         textoGatosEnHabitacion.text = "Gatos en la habitacion: " + $"{gatosEnHabitacion}";  
         felicidadGatos += gatosEnHabitacion * velocidadAumentoFelicidad;
+        nivelHabitacion = TiendaScript.nivelHabitacionn;
     }
     public void Agregar()
     { 

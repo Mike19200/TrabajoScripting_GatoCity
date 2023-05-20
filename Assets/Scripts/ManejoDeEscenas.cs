@@ -17,12 +17,17 @@ public class ManejoDeEscenas : MonoBehaviour
 
     public void EscenaMenu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene("Inicio");
     }
 
     public void Hotel()
     {
         SceneManager.LoadScene("Hotel");
+    }
+
+    public void Tienda()
+    {
+        SceneManager.LoadScene("Tienda");
     }
 
     public void Habitacion1()

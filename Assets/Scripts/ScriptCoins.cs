@@ -12,7 +12,7 @@ public class ScriptCoins : MonoBehaviour
     public float tiempoDisminucion = 1f;
     public float aumentoPorCiclo = 1f;
     public float disminucionPorGato = 0.5f;
-    public float produccionMonedasHabitacion = 0f;
+    public static float produccionMonedasHabitacion = 0f;
 
     private float tiempoPasado = 0f;
     private float tiempoRestante = 0f;
