@@ -6,14 +6,27 @@ using UnityEngine.UI;
 public class AgregarGatos : MonoBehaviour
 {
     public int gatosEnHabitacion = 0; 
-    public int felicidadGatos = 0;
+    public float felicidadGatos = 0;
+
+    public int nivelHabitacion = 1;
     public Text textoGatosEnHabitacion; 
+    public Text felicidadGatosTexto; 
     public GameObject[] objetosGatos; 
     public Camera camara;
 
     public float rango = 1f; 
+    public float velocidadAumentoFelicidad = 0.0000005f;
 
-
+    private void Start() 
+    {
+        nivelHabitacion=1;
+    }
+    private void Update() 
+    {
+        felicidadGatosTexto.text = "Felicidad: " + $"{felicidadGatos}";
+        textoGatosEnHabitacion.text = "Gatos en la habitacion: " + $"{gatosEnHabitacion}";  
+        felicidadGatos += gatosEnHabitacion * velocidadAumentoFelicidad;
+    }
     public void Agregar()
     { 
         if(gatosEnHabitacion < 4)
@@ -31,11 +44,33 @@ public class AgregarGatos : MonoBehaviour
 
     public void Aumentar()
     {
-        if(gatosEnHabitacion < 4)
+        if(nivelHabitacion == 1)
         {
-           gatosEnHabitacion++; 
-           felicidadGatos++;
-           textoGatosEnHabitacion.text = "Gatos en la habitacion: " + gatosEnHabitacion.ToString();  
+            if(gatosEnHabitacion < 4)
+            {
+                gatosEnHabitacion++; 
+            }
+        }
+        if(nivelHabitacion == 2)
+        {
+            if(gatosEnHabitacion < 8)
+            {
+                gatosEnHabitacion++; 
+            }
+        }
+        if(nivelHabitacion == 3)
+        {
+            if(gatosEnHabitacion < 15)
+            {
+                gatosEnHabitacion++; 
+            }
+        }
+        if(nivelHabitacion == 4)
+        {
+            if(gatosEnHabitacion < 20)
+            {
+                gatosEnHabitacion++; 
+            }
         }
     }
 }
