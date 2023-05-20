@@ -2015,6 +2015,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   precioMejorasText: {fileID: 1696885202}
+  precioGatosNaranjasText: {fileID: 80455821}
+  precioGatosNegroText: {fileID: 836251545}
+  precioGatosPersaText: {fileID: 380343483}
+  precioGatoNaranja: 50
+  precioGatoNegro: 100
+  precioGatoPersa: 250
   precioMejoras: 0
   objetoGatoNaranja: {fileID: 1982464352278877918, guid: a7455b79463b44046bd01cd2bd16afdb, type: 3}
   camara: {fileID: 0}

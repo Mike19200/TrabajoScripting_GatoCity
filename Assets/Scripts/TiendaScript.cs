@@ -7,6 +7,13 @@ using UnityEngine.SceneManagement;
 public class TiendaScript : MonoBehaviour
 {
     public Text precioMejorasText; 
+    public Text precioGatosNaranjasText; 
+    public Text precioGatosNegroText; 
+    public Text precioGatosPersaText; 
+
+    public int precioGatoNaranja;
+    public int precioGatoNegro;
+    public int precioGatoPersa;
     public int precioMejoras;
 
     public GameObject objetoGatoNaranja;
@@ -20,6 +27,9 @@ public class TiendaScript : MonoBehaviour
     void Start()
     {
         //precioMejoras = 0;
+        precioGatoNaranja = 50;
+        precioGatoNegro = 100;
+        precioGatoPersa = 250;
     }
 
     // Update is called once per frame
@@ -41,7 +51,12 @@ public class TiendaScript : MonoBehaviour
         {
             precioMejoras = 700;
         }
+
+        precioGatosNaranjasText.text = "Precio: " + $"{precioGatoNaranja}";
         precioMejorasText.text = "Precio: " + $"{precioMejoras}";
+        precioGatosNegroText.text = "Precio: " + $"{precioGatoNegro}";
+        precioGatosPersaText.text = "Precio: " + $"{precioGatoPersa}";
+        
     }
 
     public void Mejorar()
@@ -51,7 +66,7 @@ public class TiendaScript : MonoBehaviour
             if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= 50)
             {
                 nivelHabitacionn++;
-                ScriptCoins.produccionMonedasHabitacion -= 50;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNaranja;
             }
 
             if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= 150)
@@ -79,24 +94,28 @@ public class TiendaScript : MonoBehaviour
     {
         if(AgregarGatos.nivelHabitacion <= 4)
         {
-            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= 50 && AgregarGatos.gatosEnHabitacion < 4)
+            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= precioGatoNaranja && AgregarGatos.gatosEnHabitacion < 4)
             {
                 AgregarGatos.gatosNaranjasEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 50;
+                precioGatoNaranja += 50;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNaranja;
             }
             if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= 50 && AgregarGatos.gatosEnHabitacion < 8)
             {
                 AgregarGatos.gatosNaranjasEnHabitacion++;
+                precioGatoNaranja += 50;
                 ScriptCoins.produccionMonedasHabitacion -= 50;
             }
             if(AgregarGatos.nivelHabitacion == 3 && ScriptCoins.produccionMonedasHabitacion >= 50 && AgregarGatos.gatosEnHabitacion < 15)
             {
                 AgregarGatos.gatosNaranjasEnHabitacion++;
+                precioGatoNaranja += 50;
                 ScriptCoins.produccionMonedasHabitacion -= 50;
             }
             if(AgregarGatos.nivelHabitacion == 4 && ScriptCoins.produccionMonedasHabitacion >= 50 && AgregarGatos.gatosEnHabitacion < 20)
             {
                 AgregarGatos.gatosNaranjasEnHabitacion++;
+                precioGatoNaranja += 50;
                 ScriptCoins.produccionMonedasHabitacion -= 50;
             }
             
@@ -107,25 +126,29 @@ public class TiendaScript : MonoBehaviour
     {
         if(AgregarGatos.nivelHabitacion <= 4)
         {
-            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= 100 && AgregarGatos.gatosEnHabitacion < 4)
+            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= precioGatoNegro && AgregarGatos.gatosEnHabitacion < 4)
             {
                 AgregarGatos.gatosNegrosEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 100;
+                precioGatoNegro += 100;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNegro;
             }
-            if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= 100 && AgregarGatos.gatosEnHabitacion < 8)
+            if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= precioGatoNegro && AgregarGatos.gatosEnHabitacion < 8)
             {
                 AgregarGatos.gatosNegrosEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 100;
+                precioGatoNegro += 100;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNegro;
             }
-            if(AgregarGatos.nivelHabitacion == 3 && ScriptCoins.produccionMonedasHabitacion >= 100 && AgregarGatos.gatosEnHabitacion < 15)
+            if(AgregarGatos.nivelHabitacion == 3 && ScriptCoins.produccionMonedasHabitacion >= precioGatoNegro && AgregarGatos.gatosEnHabitacion < 15)
             {
                 AgregarGatos.gatosNegrosEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 100;
+                precioGatoNegro += 100;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNegro;
             }
-            if(AgregarGatos.nivelHabitacion == 4 && ScriptCoins.produccionMonedasHabitacion >= 100 && AgregarGatos.gatosEnHabitacion < 20)
+            if(AgregarGatos.nivelHabitacion == 4 && ScriptCoins.produccionMonedasHabitacion >= precioGatoNegro && AgregarGatos.gatosEnHabitacion < 20)
             {
                 AgregarGatos.gatosNegrosEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 100;
+                precioGatoNegro += 100;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoNegro;
             }
             
         }
@@ -133,25 +156,29 @@ public class TiendaScript : MonoBehaviour
     {
         if(AgregarGatos.nivelHabitacion <= 4)
         {
-            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= 250 && AgregarGatos.gatosEnHabitacion < 4)
+            if(AgregarGatos.nivelHabitacion == 1 && ScriptCoins.produccionMonedasHabitacion >= precioGatoPersa && AgregarGatos.gatosEnHabitacion < 4)
             {
                 AgregarGatos.gatosPersaEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 250;
+                precioGatoPersa += 300;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoPersa;
             }
-            if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= 250 && AgregarGatos.gatosEnHabitacion < 8)
+            if(AgregarGatos.nivelHabitacion == 2 && ScriptCoins.produccionMonedasHabitacion >= precioGatoPersa && AgregarGatos.gatosEnHabitacion < 8)
             {
                 AgregarGatos.gatosPersaEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 250;
+                precioGatoPersa += 300;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoPersa;
             }
-            if(AgregarGatos.nivelHabitacion == 3 && ScriptCoins.produccionMonedasHabitacion >= 250 && AgregarGatos.gatosEnHabitacion < 15)
+            if(AgregarGatos.nivelHabitacion == 3 && ScriptCoins.produccionMonedasHabitacion >= precioGatoPersa && AgregarGatos.gatosEnHabitacion < 15)
             {
                 AgregarGatos.gatosPersaEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 250;
+                precioGatoPersa += 300;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoPersa;
             }
-            if(AgregarGatos.nivelHabitacion == 4 && ScriptCoins.produccionMonedasHabitacion >= 250 && AgregarGatos.gatosEnHabitacion < 20)
+            if(AgregarGatos.nivelHabitacion == 4 && ScriptCoins.produccionMonedasHabitacion >= precioGatoPersa && AgregarGatos.gatosEnHabitacion < 20)
             {
                 AgregarGatos.gatosPersaEnHabitacion++;
-                ScriptCoins.produccionMonedasHabitacion -= 250;
+                precioGatoPersa += 300;
+                ScriptCoins.produccionMonedasHabitacion -= precioGatoPersa;
             }
             
         }

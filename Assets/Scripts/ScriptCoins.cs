@@ -8,7 +8,7 @@ public class ScriptCoins : MonoBehaviour
     public static ScriptCoins Instance { get; private set; }
 
     public Text textoProduccionMonedasHabitacion;
-    public float tiempoAumento = 5f;
+    public float tiempoAumento = 10f;
     public float tiempoDisminucion = 1f;
     public float aumentoPorCiclo = 1f;
     public float disminucionPorGato = 0.5f;
@@ -16,7 +16,7 @@ public class ScriptCoins : MonoBehaviour
 
     private float tiempoPasado = 0f;
     private float tiempoRestante = 0f;
-    private float felicidadGatos = 0f;
+    
 
     private void Awake()
     {
@@ -39,17 +39,12 @@ public class ScriptCoins : MonoBehaviour
         {
             tiempoPasado = 0f;
             produccionMonedasHabitacion += aumentoPorCiclo;
-            tiempoRestante = tiempoAumento - felicidadGatos * tiempoDisminucion;
+            tiempoRestante = tiempoAumento - AgregarGatos.gatosEnHabitacion * tiempoDisminucion;
 
             if (textoProduccionMonedasHabitacion != null)
             {
                 textoProduccionMonedasHabitacion.text = "GatoCoins: " + produccionMonedasHabitacion.ToString();
             }
         }
-    }
-
-    public void ActualizarFelicidadGatos(float felicidad)
-    {
-        felicidadGatos = felicidad;
     }
 }
